@@ -9,7 +9,15 @@ null_ls.setup({
 		formatting.prettier.with({ extra_args = { "--single-quote", "--jsx-single-quote" } }),
 		formatting.stylua,
 		formatting.clang_format.with({ extra_args = { "--sort-includes", "--style=Google" } }),
-		diagnostics.cppcheck.with({ extra_args = { "--std=c++20" } }),
+		diagnostics.cppcheck.with({
+			extra_args = {
+				"--std=c++20",
+				"--language=c++",
+				"--enable=all",
+				"--suppress=missingIncludeSystem",
+				"--suppress=unmatchedSuppression",
+			},
+		}),
 		-- diagnostics.eslint,
 	},
 	on_attach = function(client)

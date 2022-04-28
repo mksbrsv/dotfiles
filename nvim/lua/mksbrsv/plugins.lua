@@ -50,9 +50,6 @@ require("packer").startup(function()
 		requires = {
 			"nvim-lua/plenary.nvim",
 		},
-		config = function()
-			require("gitsigns").setup()
-		end,
 	})
 	use("p00f/nvim-ts-rainbow")
 	use("rose-pine/neovim")
@@ -62,10 +59,5 @@ require("packer").startup(function()
 	use("folke/which-key.nvim")
 	use("akinsho/toggleterm.nvim")
 	use("mfussenegger/nvim-dap")
-	use({
-		"blackCauldron7/surround.nvim",
-		config = function()
-			require("surround").setup({ mappings_style = "surround" })
-		end,
-	})
+	use("blackCauldron7/surround.nvim")
 end)

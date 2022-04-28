@@ -1,0 +1,152 @@
+[
+	{
+		"group": "Programs",
+		"description": "Terminal emulator",
+		"command": "super + Return"
+	},
+	{
+		"group": "Programs",
+		"description": "Brave",
+		"command": "super + shift + b"
+	},
+	{
+		"group": "Programs",
+		"description": "Rofi with all bins",
+		"command": "super + shift + @space"
+	},
+	{
+		"group": "Programs",
+		"description": "Rofi with desktop apps",
+		"command": "super + @space"
+	},
+	{
+		"group": "Programs",
+		"description": "Rofi with scripts",
+		"command": "super + alt + c"
+	},
+	{
+		"group": "Programs",
+		"description": "Take a screenshot",
+		"command": "super + shift + s"
+	},
+	{
+		"group": "Programs",
+		"description": "Mailspring",
+		"command": "super + shift + m"
+	},
+	{
+		"group": "Programs",
+		"description": "KeePassXC",
+		"command": "super + shift + k"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Quit bspwm",
+		"command": "super + alt + q"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Reload bspwm",
+		"command": "super + alt + r"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Close and kill app",
+		"command": "super + shift + q"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Switch between the tiled and monocle layout",
+		"command": "super + n"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Send the newest marked node to the newest preselected node",
+		"command": "super + y"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Swap the current node and the biggest window",
+		"command": "super + g"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Set the window state float",
+		"command": "super + t"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Set the window state pseude_tiled",
+		"command": "super + shift + t"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Set the window state floating",
+		"command": "super + shift + s"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Set the node flags: m - marked, x - locked, y - sticky, z - private",
+		"command": "super + ctrl + {m, x, y, z}"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Focus the node in the given direction: h - left, j - down, k - up, l - right",
+		"command": "super + {h, j, k, l}"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Swap the node in the given direction: h - left, j - down, k - up, l - right",
+		"command": "super + shift + {h, j, k, l}"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Focus the next/previous window in the current desktop, with shift - reverse direction",
+		"command": "super + c, super + shift + c"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Focus desktop",
+		"command": "super + {1-9, 0}"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Send to the given desktop",
+		"command": "super + shift + {1-9, 0}"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Expand a window by moving one of its side outward: h - left, j - down, k - up, l - right",
+		"command": "super + alt + {h, j, k, l}"
+	},
+	{
+		"group": "Bspwm",
+		"description": "Move a floating window",
+		"command": "super + {Left, Down, Up, Right}"
+	},
+	{
+		"group": "Special",
+		"description": "Raise volume +5%",
+		"command": "XF86AudioRaiseVolume"
+	},
+	{
+		"group": "Special",
+		"description": "Lower volume +5%",
+		"command": "XF86AudioLowerVolume"
+	},
+	{
+		"group": "Special",
+		"description": "Mute audio",
+		"command": "XF86AudioMute"
+	},
+	{
+		"group": "Special",
+		"description": "Raise brightness +5",
+		"command": "XF86MonBrightnessUp"
+	},
+	{
+		"group": "Special",
+		"description": "Lower brightness -5",
+		"command": "XF86MonBrightnessDown"
+	}
+]

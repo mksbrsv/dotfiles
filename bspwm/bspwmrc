@@ -1,0 +1,41 @@
+#! /bin/sh
+#           _        _
+#          | |      | |
+# _ __ ___ | | _____| |__  _ __ _____   __
+#| '_ ` _ \| |/ / __| '_ \| '__/ __\ \ / /
+#| | | | | |   <\__ \ |_) | |  \__ \\ V /
+#|_| |_| |_|_|\_\___/_.__/|_|  |___/ \_/
+#
+
+# STARTUP
+feh --bg-fill --randomize ~/stuff/wallpapers/ &
+~/.config/polybar/launch.sh &
+sxhkd &
+picom --config ~/.config/picom/picom.conf &
+xsetroot -cursor_name left_ptr &
+
+bspc monitor -d I II III IV V VI
+
+bspc config border_width         1
+bspc config window_gap          5
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
+bspc config remove_disabled_monitor true
+
+# bspc config normal_border_color "#151515"
+# bspc config focused_border_color "#d0d0d0"
+bspc config normal_border_color "#24283b"
+bspc config focused_border_color "#a9b1d6"
+
+
+# RULES
+bspc rule -a Brave-browser desktop='^2'
+spc rule -a Screenkey manage=off
+bspc rule -a KeePassXC desktop='^5'
+bspc rule -a Mailspring desktop='^5'
+
+# Enable touchpad tapping and natural scrolling
+xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
